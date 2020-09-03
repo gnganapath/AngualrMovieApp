@@ -24,6 +24,7 @@
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "ng-image-slider": "^2.6.4",
+    "ngx-tree-dnd": "^2.6.0",
     "popper.js": "^1.16.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",

@@ -5,3 +5,23 @@
         <button class="btn btn-primary" (click)="searchMovie()">search</button>
     </form>
 </div>
+
+<div class="container"> Actor: {{searchResult[0].name}} - 
+    <div>Movies :<div *ngFor="let mov of searchResult[0].movies">{{mov}}</div></div>, 
+    <div>Year : <div *ngFor="let year of searchResult[0].year">{{year}}</div></div>
+</div>
+<!-- <lib-ngx-tree-component 
+[treeData]="myTree"
+(ondragstart)="onDragStart($event)"
+(ondragenter)="onDragEnter($event)"
+(ondragleave)="onDragLeave($event)"
+(ondrop)="onDrop($event)"
+(onallowdrop)="onAllowDrop($event)"
+(onadditem)="onAddItem($event)"
+(onStartDeleteItem)="onStartDeleteItem($event)"
+(onFinishDeleteItem)="onFinishDeleteItem($event)"
+(onCancelDeleteItem)="onCancelDeleteItem($event)"
+(onStartRenameItem)="onStartRenameItem($event)"
+(onFinishRenameItem)="onFinishRenameItem($event)"
+[config]='config'>
+</lib-ngx-tree-component> -->
