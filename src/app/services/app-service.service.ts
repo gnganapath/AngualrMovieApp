@@ -13,4 +13,7 @@ export class AppServiceService {
     return this.http.get('../assets/mock-json/movie-landing.json');
   }
 
+  public searchMovie(data):Observable<any>{
+    return this.http.get('../assets/mock-json/search-actormovies.json');
+  }
 }

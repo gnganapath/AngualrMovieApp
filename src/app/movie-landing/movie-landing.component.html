@@ -13,7 +13,7 @@
     <div class="movie-landlist" style="text-align:center;">
         <div *ngFor="let movie of Movielist">
             <img src="{{movie.heroImg}}" style="width:50%;height:30%;align-content: center;"/>
-            <h4>NAME: {{movie.movie}}</h4>
+            <h4><a routerLink="details/{{movie.movie}}" >NAME: {{movie.movie}}</a></h4>
             <h5>CAST: {{movie.cast}}</h5>
             <h6>RATING: {{movie.rating}}</h6>
         </div>

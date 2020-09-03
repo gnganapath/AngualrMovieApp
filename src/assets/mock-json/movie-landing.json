@@ -1,5 +1,6 @@
 {
-	"data": [{
+	"data": [
+		{
 			"movie": "Batman",
 			"heroImg": "https://images.pexels.com/photos/6633/car-superhero-symbol-batman.jpg",
 			"cast": "John Doe, Mike Hessan ",
@@ -19,7 +20,6 @@
 		},
 		{
 			"video": "https://www.youtube.com/watch?v=3oxo-wacE50",
-			"heroImg": "https://images.pexels.com/photos/4048093/pexels-photo-4048093.jpeg",
 			"movie": "KGF ",
 			"cast": "Rocky- yash",
 			"rating": "5"

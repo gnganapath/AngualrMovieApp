@@ -1,0 +1,6 @@
+{
+    "status": true,
+    "data": [
+        {"name":"Rocky", "movies": ["R movie1", "R movie2", "R movie3"], "year": [2018, 2019, 2020]}
+    ]
+}

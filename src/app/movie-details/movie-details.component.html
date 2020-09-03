@@ -1,1 +1,19 @@
-<p>movie-details works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <img src="{{movie.heroImg}}" style="width:100%;height:100%;align-content: center;"/>
+            <h4><a routerLink="details/{{movie.movie}}" >NAME: {{movie.movie}}</a></h4>
+            <h5>CAST: {{movie.cast}}</h5>
+            <h6>RATING: {{movie.rating}}</h6>
+        </div>
+        <div class="col-6 col-md-4">
+            <h4>Similar Movies</h4>
+            <div *ngFor="let simlist of movie.similar" class="col-6">
+            <span>{{simlist}}</span>
+            </div>
+            <div *ngFor="let links of movie.links"  class="col-6">
+            <a href="{{links}}"><span>{{links}}</span></a>
+            </div>
+        </div>  
+    </div>
+</div>

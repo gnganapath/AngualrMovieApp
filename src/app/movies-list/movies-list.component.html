@@ -1,1 +1,7 @@
-<p>movies-list works!</p>
+<div class="container">
+    <form>   
+        <label>Search Actor/Movie Name</label>
+        <input type="text" id="search" class="form-control" placeholder="Actor name" required="" autofocus="" [formControl]="search">
+        <button class="btn btn-primary" (click)="searchMovie()">search</button>
+    </form>
+</div>
