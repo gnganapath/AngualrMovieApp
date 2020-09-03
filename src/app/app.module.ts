@@ -1,29 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { NgImageSliderModule } from 'ng-image-slider';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, AppRouteCompoents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MovieLandingComponent } from './movie-landing/movie-landing.component';
-import { MovieDetailsComponent } from './movie-details/movie-details.component';
-import { MoviesListComponent } from './movies-list/movies-list.component';
 import { HeaderComponent } from './header/header.component';
+
+import { AppServiceService } from './services/app-service.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MovieLandingComponent,
-    MovieDetailsComponent,
-    MoviesListComponent,
+    AppRouteCompoents,
     HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgImageSliderModule
+    HttpClientModule,
+    NgImageSliderModule,
+    
   
   ],
-  providers: [],
+  providers: [AppServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

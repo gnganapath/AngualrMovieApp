@@ -1,11 +1,21 @@
-<p>movie-landing works!</p>
-<div style="width: 840px; height: 700px; text-align:center;margin:0; padding:0;">
-    <ng-image-slider #nav
-      [images]="imageObject"
-      [infinite]="true"
-      [autoSlide]="1"
-      [imageSize]="{width: '100%', height: 500}"
-      [animationSpeed]="4"
-      [showVideoControls]="true"
-      slideImage="1"></ng-image-slider>
-  </div>
+<div class="container">
+    <div style="width: 100%; height: 60vh; text-align:center;margin:0; padding:0;">
+        <ng-image-slider #nav
+        [images]="Movielist"
+        [infinite]="true"
+        [autoSlide]="1"
+        [imageSize]="{width: '100%', height: '60%'}"
+        [animationSpeed]="4"
+        [showVideoControls]="true"
+        slideImage="1"></ng-image-slider>
+    </div>
+    <div><h4>Movie details in list</h4></div>
+    <div class="movie-landlist" style="text-align:center;">
+        <div *ngFor="let movie of Movielist">
+            <img src="{{movie.heroImg}}" style="width:50%;height:30%;align-content: center;"/>
+            <h4>NAME: {{movie.movie}}</h4>
+            <h5>CAST: {{movie.cast}}</h5>
+            <h6>RATING: {{movie.rating}}</h6>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+{
+	"data": [{
+			"movie": "Batman",
+			"heroImg": "https://images.pexels.com/photos/6633/car-superhero-symbol-batman.jpg",
+			"cast": "John Doe, Mike Hessan ",
+			"rating": "5"
+		},
+		{
+			"movie": "Green Lantern",
+			"heroImg": "https://images.pexels.com/photos/4142511/pexels-photo-4142511.jpeg",
+			"cast": "Dwayne Diaz",
+			"rating": "2"
+		},
+		{
+			"movie": "Groot",
+			"heroImg": "https://images.pexels.com/photos/4048093/pexels-photo-4048093.jpeg",
+			"cast": "Groot",
+			"rating": "4"
+		},
+		{
+			"video": "https://www.youtube.com/watch?v=3oxo-wacE50",
+			"heroImg": "https://images.pexels.com/photos/4048093/pexels-photo-4048093.jpeg",
+			"movie": "KGF ",
+			"cast": "Rocky- yash",
+			"rating": "5"
+		}
+
+	]
+}
